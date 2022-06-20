@@ -1,0 +1,25 @@
+.FooterText {
+  font-family: 'Montserrat' !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #bdbdbd;
+
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+}
+
+.FooterLink,
+a:link,
+a:active,
+a:hover,
+a:visited {
+  font-weight: 700;
+  color: #bdbdbd;
+}

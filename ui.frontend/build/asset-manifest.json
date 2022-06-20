@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/css/main.62b896b9.chunk.css",
+    "main.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/main.aa694cc0.chunk.js",
+    "main.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/main.aa694cc0.chunk.js.map",
+    "runtime-main.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/runtime-main.b0e364d2.js",
+    "runtime-main.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/runtime-main.b0e364d2.js.map",
+    "static/js/2.2aee7617.chunk.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/2.2aee7617.chunk.js",
+    "static/js/2.2aee7617.chunk.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/2.2aee7617.chunk.js.map",
+    "static/js/3.d8d3708d.chunk.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/3.d8d3708d.chunk.js",
+    "static/js/3.d8d3708d.chunk.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/3.d8d3708d.chunk.js.map",
+    "static/css/4.269a8ef5.chunk.css": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/css/4.269a8ef5.chunk.css",
+    "static/js/4.e99926ee.chunk.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/4.e99926ee.chunk.js",
+    "static/js/4.e99926ee.chunk.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/4.e99926ee.chunk.js.map",
+    "static/js/5.251469e2.chunk.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/5.251469e2.chunk.js",
+    "static/js/5.251469e2.chunk.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/5.251469e2.chunk.js.map",
+    "static/js/6.1796101a.chunk.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/6.1796101a.chunk.js",
+    "static/js/6.1796101a.chunk.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/6.1796101a.chunk.js.map",
+    "index.html": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/index.html",
+    "static/css/4.269a8ef5.chunk.css.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/css/4.269a8ef5.chunk.css.map",
+    "static/css/main.62b896b9.chunk.css.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/css/main.62b896b9.chunk.css.map",
+    "static/js/2.2aee7617.chunk.js.LICENSE.txt": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/2.2aee7617.chunk.js.LICENSE.txt",
+    "static/js/3.d8d3708d.chunk.js.LICENSE.txt": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/3.d8d3708d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b0e364d2.js",
+    "static/js/2.2aee7617.chunk.js",
+    "static/css/main.62b896b9.chunk.css",
+    "static/js/main.aa694cc0.chunk.js"
+  ]
+}

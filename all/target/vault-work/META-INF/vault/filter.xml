@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/reactapp-packages"/>
+    <filter root="/apps/reactapp-vendor-packages"/>
+    <filter root="/apps/reactapp-vendor-packages/container/install">
+        <include pattern="\Q/apps/reactapp-vendor-packages/container/install/acs-aem-commons-content-\E.*\.zip(/.*)?"/>
+    </filter>
+</workspaceFilter>
