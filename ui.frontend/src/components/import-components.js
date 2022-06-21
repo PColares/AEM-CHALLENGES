@@ -19,8 +19,13 @@ import './Page/Page';
 import './Container/Container';
 import './ExperienceFragment/ExperienceFragment';
 import { BodySection } from './BodySection/bodySection';
+import { TitleSection } from './TitleSection/titleSection';
+import { LoginForm } from './FormSection/formSection';
 import './HeaderComponent';
 import './FooterComponent';
+import './FormSection/formSection';
+import { LoginPage } from './LoginPage';
+
 import { MapTo } from '@adobe/aem-react-editable-components';
 
 import {
@@ -78,6 +83,10 @@ MapTo('reactapp/components/carousel')(CarouselV1, { isEmpty: CarouselV1IsEmptyFn
 MapTo('reactapp/components/container')(ContainerV1, { isEmpty: ContainerV1IsEmptyFn });
 
 MapTo('reactapp/')(BodySection);
+MapTo('reactapp/')(TitleSection);
+MapTo('reactapp/')(LoginForm);
+MapTo('reactapp/')(LoginPage);
+
 //lazy load of internal component (hello world)
 
 /**
