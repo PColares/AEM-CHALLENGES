@@ -5,6 +5,7 @@ C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reacta
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\models\FormSection.java
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\models\package-info.java
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\models\HelloWorldModel.java
+C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\models\HomePage.java
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\models\impl\LoginPageImpl.java
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\servlets\package-info.java
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\models\HeaderModel.java
@@ -13,6 +14,7 @@ C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reacta
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\models\FooterModel.java
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\models\impl\BodySectionImpl.java
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\schedulers\SimpleScheduledTask.java
+C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\models\impl\HomePageImpl.java
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\models\TitleSection.java
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\models\impl\FormSectionImpl.java
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\core\src\main\java\com\reactapp\core\schedulers\package-info.java

@@ -25,6 +25,7 @@ import './HeaderComponent';
 import './FooterComponent';
 import './FormSection/formSection';
 import { LoginPage } from './LoginPage';
+import { HomePage } from './HomePage';
 
 import { MapTo } from '@adobe/aem-react-editable-components';
 
@@ -86,6 +87,7 @@ MapTo('reactapp/')(BodySection);
 MapTo('reactapp/')(TitleSection);
 MapTo('reactapp/')(LoginForm);
 MapTo('reactapp/')(LoginPage);
+MapTo('reactapp/')(HomePage);
 
 //lazy load of internal component (hello world)
 

@@ -25,12 +25,12 @@
   justify-content: center;
 }
 
-.background-image {
+.background-image-1 {
   width: 50vw;
   height: 100vh;
 }
 
-.compasso-logo {
+.compasso-logo-1 {
   position: absolute;
   margin-top: 25px;
 }

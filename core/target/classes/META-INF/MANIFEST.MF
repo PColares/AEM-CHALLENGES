@@ -46,6 +46,7 @@ Service-Component: OSGI-INF/com.reactapp.core.filters.LoggingFilter.xm
 Sling-Model-Classes: com.reactapp.core.models.FooterModel,com.reactapp
  .core.models.HeaderModel,com.reactapp.core.models.HelloWorldModel,com
  .reactapp.core.models.impl.BodySectionImpl,com.reactapp.core.models.i
- mpl.FormSectionImpl,com.reactapp.core.models.impl.LoginPageImpl,com.r
- eactapp.core.models.impl.TitleSectionImpl
+ mpl.FormSectionImpl,com.reactapp.core.models.impl.HomePageImpl,com.re
+ actapp.core.models.impl.LoginPageImpl,com.reactapp.core.models.impl.T
+ itleSectionImpl
 

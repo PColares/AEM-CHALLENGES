@@ -3,11 +3,13 @@ com\reactapp\core\models\HeaderModel.class
 com\reactapp\core\models\TitleSection.class
 com\reactapp\core\filters\LoggingFilter.class
 com\reactapp\core\filters\package-info.class
+com\reactapp\core\models\HomePage.class
 com\reactapp\core\models\impl\FormSectionImpl.class
 com\reactapp\core\models\package-info.class
 com\reactapp\core\models\LoginPage.class
 com\reactapp\core\schedulers\package-info.class
 com\reactapp\core\models\impl\TitleSectionImpl.class
+com\reactapp\core\models\impl\HomePageImpl.class
 com\reactapp\core\models\FooterModel.class
 com\reactapp\core\listeners\SimpleResourceListener.class
 com\reactapp\core\schedulers\SimpleScheduledTask$Config.class

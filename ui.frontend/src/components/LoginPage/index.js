@@ -14,8 +14,8 @@ export const LoginPage = ({ title, paragraph, buttonName, logoImage = {}, backgr
                 <LoginForm title={loginTitle} buttonName={buttonName} />
             </div>
             <div className="flex-item-2">
-                <img src={logoImage.src} alt='logo' className="compasso-logo" />
-                <img src={backgroundImage.src} alt='background' className='background-image' />
+                <img src={logoImage.src} alt='logo' className="compasso-logo-1" />
+                <img src={backgroundImage.src} alt='background' className='background-image-1' />
             </div>
         </div>
     )
