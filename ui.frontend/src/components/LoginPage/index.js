@@ -8,7 +8,7 @@ require('./index.css')
 export const LoginPage = ({ title, paragraph, buttonName, logoImage = {}, backgroundImage = {} }) => {
     const loginTitle = "Login"
     return (
-        <div className="container">
+        <div className="container-1">
             <div className="flex-item-1">
                 <TitleSection title={title} paragraph={paragraph} />
                 <LoginForm title={loginTitle} buttonName={buttonName} />

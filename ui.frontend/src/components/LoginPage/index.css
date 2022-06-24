@@ -1,4 +1,4 @@
-.container {
+.container-1 {
   display: flex;
   flex-direction: row;
   background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
@@ -6,11 +6,11 @@
   height: 100vh;
   width: 100vw;
 }
+
 .flex-item-1 {
   display: flex;
   flex-direction: column;
   width: 50vw;
-  /* margin: 100px 0 0 250px; */
   margin-left: 15%;
   margin-top: 8%;
 }
@@ -33,4 +33,24 @@
 .compasso-logo-1 {
   position: absolute;
   margin-top: 25px;
+}
+
+@media (max-width: 650px) {
+  .background-image-1 {
+    display: none;
+  }
+
+  .compasso-logo-1 {
+    width: 280px;
+    height: 80px;
+    margin-top: 0;
+    right: 10%;
+    left: 10%;
+    padding-top: 0;
+  }
+
+  .flex-item-1 {
+    margin-top: 35%;
+    width: 80vw;
+  }
 }

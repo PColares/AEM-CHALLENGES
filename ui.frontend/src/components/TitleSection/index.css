@@ -16,3 +16,10 @@
 
   color: #e0e0e0;
 }
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 48px;
+    line-height: 0px;
+  }
+}
