@@ -5,9 +5,18 @@
 
 .header-item-1 {
   height: 163px;
+  width: 95vw;
   display: flex;
+  flex-direction: row;
 }
 
+.location {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+  width: 100%;
+  color: black;
+}
 .compasso-logo-2 {
   width: 300px;
   height: 84px;
@@ -29,7 +38,8 @@
   width: 60rem;
   max-height: 40rem;
   left: -160px;
-  top: 360px;
+  top: 300px;
+  margin-top: 90px;
   z-index: -1;
   object-fit: scale-down;
 }
@@ -64,7 +74,6 @@
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
-
   z-index: 4;
 }
 
@@ -78,6 +87,7 @@
     width: 31.25rem;
     left: -25%;
     top: 35%;
+    margin-top: 0px;
     max-height: 43rem;
     object-fit: scale-down;
     object-position: -4rem 5rem;
