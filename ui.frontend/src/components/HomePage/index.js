@@ -1,33 +1,46 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { useHistory } from "react-router-dom";
 import { MapTo } from '@adobe/aem-react-editable-components';
+
 require('./index.css')
 
 export const HomePage = ({ title, subtitle, logoImage = {}, backgroundImage = {} }) => {
-    const [lat, setLat] = useState([]);
-    const [long, setLong] = useState([]);
+    let maxSeconds = 600;
+    let refStatus = useRef();
+    const [counter, setCounter] = useState(maxSeconds);
     const [location, setLocation] = useState(null);
     const [data, setData] = useState(null);
+    const history = useHistory();
+
+    const LoginRedirect = () => {
+        return history.push("/content/reactapp/us/en/login.html");
+    }
 
     const fetchData = async () => {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            setLat(position.coords.latitude);
-            setLong(position.coords.longitude);
-        });
-
         await fetch('http://api.weatherapi.com/v1/current.json?key=91d0c33bbe064dc3bd0143610222306&q=Belém&aqi=no')
             .then(response => { if (response.status === 200) { return response.json() } })
             .then(data => {
-                console.log('data', data)
                 setLocation(data)
                 setData(data.location)
             });
     }
-
-
     useEffect(() => {
         fetchData();
     }, [])
+
+    useEffect(() => {
+        function tick() {
+            setCounter(prevCounter => prevCounter - 1);
+        }
+        refStatus.current = setInterval(() => tick(), 1000);
+    }, [])
+
+    useEffect(() => {
+        if (counter === 0) {
+            LoginRedirect();
+        }
+    }, [counter])
 
     return (
         <div className="home-container">
@@ -67,21 +80,31 @@ export const HomePage = ({ title, subtitle, logoImage = {}, backgroundImage = {}
                 <div className="footer-content">
                     <div className="footer-text">
                         <span>Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar.</span>
+                        <div className="vertical-line"></div>
                     </div>
                     <div className="footer-refresh-container">
                         <span className='refresh-text'>
                             Application refresh in
                         </span>
                         <div className="refresh-time">
-                            <span>600</span>
+                            <span className="seconds">{counter}</span>
                             <span>seconds</span>
                         </div>
                     </div>
                     <div className="navigate">
-                        <span>Continuar Navegando</span>
+                        <span
+                            onClick={() => setCounter(maxSeconds)}
+                        >
+                            Continuar Navegando
+                        </span>
                     </div>
                     <div className="logout">
-                        <span>Logout</span>
+                        <span
+                            className="logout-button"
+                            onClick={LoginRedirect}
+                        >
+                            Logout
+                        </span>
                     </div>
                 </div>
             </div>

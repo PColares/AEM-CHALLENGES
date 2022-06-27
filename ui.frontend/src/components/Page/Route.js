@@ -13,8 +13,8 @@ const PagesRoute = () => (
     <Router>
         <StoreProvider>
             <Switch>
-                <Route path="/content/reactapp/us/en/login.html" component={LoginPage} />
-                <RoutesPrivate path="/content/reactapp/us/en/homepage.html" component={HomePage} />
+                <Route title="Compass - Login" path="/content/reactapp/us/en/login.html" component={LoginPage} />
+                <RoutesPrivate title="Compass - Home" path="/content/reactapp/us/en/homepage.html" component={HomePage} />
             </Switch>
         </StoreProvider>
     </Router>

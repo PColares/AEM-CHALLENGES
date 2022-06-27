@@ -8,19 +8,20 @@ function initialState() {
     return { user: "", password: "" };
 }
 
+function login({ user, password }) {
+    if (user === 'admin' && password === 'admin') {
+        return { token: '1234' };
+    }
+    return { error: 'Ops, usuário ou senha inválidos. Tente novamente!' };
+}
+
 export const LoginForm = ({ title, buttonName }) => {
+
     const [values, setValues] = useState(initialState);
     const [error, setError] = useState(null);
     const { setToken } = useContext(StoreContext);
     const history = useHistory();
 
-
-    function login({ user, password }) {
-        if (user === 'admin' && password === 'admin') {
-            return { token: '1234' };
-        }
-        return { error: 'Ops, usuário ou senha inválidos. Tente novamente!' };
-    }
 
     function onChange(event) {
         const { value, name } = event.target;
