@@ -64,7 +64,26 @@ export const HomePage = ({ title, subtitle, logoImage = {}, backgroundImage = {}
                 </div>
             </div>
             <div className="footer-container">
-                <h1>footer</h1>
+                <div className="footer-content">
+                    <div className="footer-text">
+                        <span>Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar.</span>
+                    </div>
+                    <div className="footer-refresh-container">
+                        <span className='refresh-text'>
+                            Application refresh in
+                        </span>
+                        <div className="refresh-time">
+                            <span>600</span>
+                            <span>seconds</span>
+                        </div>
+                    </div>
+                    <div className="navigate">
+                        <span>Continuar Navegando</span>
+                    </div>
+                    <div className="logout">
+                        <span>Logout</span>
+                    </div>
+                </div>
             </div>
         </div >
     )
