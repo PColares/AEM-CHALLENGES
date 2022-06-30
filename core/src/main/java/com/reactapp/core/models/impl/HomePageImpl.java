@@ -21,6 +21,7 @@ package com.reactapp.core.models.impl;
 import com.adobe.acs.commons.models.injectors.annotation.ChildResourceFromRequest;
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
+import com.adobe.cq.wcm.core.components.models.Image;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.reactapp.core.models.HomePage;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -43,38 +44,110 @@ public class HomePageImpl
 {
 
     @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private com.adobe.cq.wcm.core.components.models.Image logoImage;
-    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private com.adobe.cq.wcm.core.components.models.Image backgroundImage;
+    private Image logoImage;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String title;
+    private String titleText1;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String subtitle;
+    private String titleText2;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String titleText3;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String titleText4;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String paragraphText1;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String paragraphText2;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String paragraphText3;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String paragraphText4;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String footerText;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String refreshText;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String navigateButtonText;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String logoutText;
     @SlingObject
     private Resource resource;
 
     @Override
     @JsonProperty("logoImage")
-    public com.adobe.cq.wcm.core.components.models.Image getLogoImage() {
+    public Image getLogoImage() {
         return logoImage;
     }
 
     @Override
-    @JsonProperty("backgroundImage")
-    public com.adobe.cq.wcm.core.components.models.Image getBackgroundImage() {
-        return backgroundImage;
+    @JsonProperty("titleText1")
+    public String getTitleText1() {
+        return titleText1;
     }
 
     @Override
-    @JsonProperty("title")
-    public String getTitle() {
-        return title;
+    @JsonProperty("titleText2")
+    public String getTitleText2() {
+        return titleText2;
     }
 
     @Override
-    @JsonProperty("subtitle")
-    public String getSubtitle() {
-        return subtitle;
+    @JsonProperty("titleText3")
+    public String getTitleText3() {
+        return titleText3;
+    }
+
+    @Override
+    @JsonProperty("titleText4")
+    public String getTitleText4() {
+        return titleText4;
+    }
+
+    @Override
+    @JsonProperty("paragraphText1")
+    public String getParagraphText1() {
+        return paragraphText1;
+    }
+
+    @Override
+    @JsonProperty("paragraphText2")
+    public String getParagraphText2() {
+        return paragraphText2;
+    }
+
+    @Override
+    @JsonProperty("paragraphText3")
+    public String getParagraphText3() {
+        return paragraphText3;
+    }
+
+    @Override
+    @JsonProperty("paragraphText4")
+    public String getParagraphText4() {
+        return paragraphText4;
+    }
+
+    @Override
+    @JsonProperty("footerText")
+    public String getFooterText() {
+        return footerText;
+    }
+
+    @Override
+    @JsonProperty("refreshText")
+    public String getRefreshText() {
+        return refreshText;
+    }
+
+    @Override
+    @JsonProperty("navigateButtonText")
+    public String getNavigateButtonText() {
+        return navigateButtonText;
+    }
+
+    @Override
+    @JsonProperty("logoutText")
+    public String getLogoutText() {
+        return logoutText;
     }
 
     @Override

@@ -19,6 +19,7 @@
 package com.reactapp.core.models;
 
 import com.adobe.cq.export.json.ComponentExporter;
+import com.adobe.cq.wcm.core.components.models.Image;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.osgi.annotation.versioning.ConsumerType;
 
@@ -34,10 +35,7 @@ public interface LoginPage
 
 
     @JsonProperty("logoImage")
-    com.adobe.cq.wcm.core.components.models.Image getLogoImage();
-
-    @JsonProperty("backgroundImage")
-    com.adobe.cq.wcm.core.components.models.Image getBackgroundImage();
+    Image getLogoImage();
 
     @JsonProperty("title")
     String getTitle();

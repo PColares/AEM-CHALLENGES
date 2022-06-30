@@ -34,13 +34,6 @@
         "json-property": "logoImage"
       },
       {
-        "field": "backgroundImage",
-        "type": "image",
-        "label": "backgroundImage",
-        "json-expose": true,
-        "json-property": "backgroundImage"
-      },
-      {
         "field": "title",
         "type": "textfield",
         "label": "title",

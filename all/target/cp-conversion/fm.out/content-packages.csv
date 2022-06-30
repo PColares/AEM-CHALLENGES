@@ -1,4 +1,4 @@
-# File created on Mon Jun 27 17:53:47 GFT 2022 by the Apache Sling Content Package to Sling Feature converter
+# File created on Thu Jun 30 15:51:44 GFT 2022 by the Apache Sling Content Package to Sling Feature converter
 # content-package path, content-package ID, content-package type, content-package parent ID, path in parent content-package, absolute path
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\all\target\reactapp.all-1.0.0-SNAPSHOT.zip,com.reactapp:reactapp.all:1.0.0-SNAPSHOT,CONTAINER,,,
 C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\all\target\reactapp.all-1.0.0-SNAPSHOT.zip,com.adobe.aem:spa.project.core.ui.apps:1.3.10,APPLICATION,com.reactapp:reactapp.all:1.0.0-SNAPSHOT,/jcr_root/apps/reactapp-vendor-packages/application/install/spa.project.core.ui.apps-1.3.10.zip,C:\Users\Pedro\Documents\AEM\AEM-projects\reactapp\all\target\reactapp.all-1.0.0-SNAPSHOT.zip!/jcr_root/apps/reactapp-vendor-packages/application/install/spa.project.core.ui.apps-1.3.10.zip

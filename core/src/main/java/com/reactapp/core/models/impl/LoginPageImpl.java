@@ -21,6 +21,7 @@ package com.reactapp.core.models.impl;
 import com.adobe.acs.commons.models.injectors.annotation.ChildResourceFromRequest;
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
+import com.adobe.cq.wcm.core.components.models.Image;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.reactapp.core.models.LoginPage;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -43,9 +44,7 @@ public class LoginPageImpl
 {
 
     @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private com.adobe.cq.wcm.core.components.models.Image logoImage;
-    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private com.adobe.cq.wcm.core.components.models.Image backgroundImage;
+    private Image logoImage;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String title;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -57,14 +56,8 @@ public class LoginPageImpl
 
     @Override
     @JsonProperty("logoImage")
-    public com.adobe.cq.wcm.core.components.models.Image getLogoImage() {
+    public Image getLogoImage() {
         return logoImage;
-    }
-
-    @Override
-    @JsonProperty("backgroundImage")
-    public com.adobe.cq.wcm.core.components.models.Image getBackgroundImage() {
-        return backgroundImage;
     }
 
     @Override

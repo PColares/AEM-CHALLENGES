@@ -2,9 +2,24 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useHistory } from "react-router-dom";
 import { MapTo } from '@adobe/aem-react-editable-components';
+import uolBall from '../../assets/uol-ball.png'
 require('./index.css')
 
-export const HomePage = ({ title, subtitle, logoImage = {}, backgroundImage = {} }) => {
+export const HomePage = ({
+    logoImage = {},
+    titleText1,
+    titleText2,
+    titleText3,
+    titleText4,
+    paragraphText1,
+    paragraphText2,
+    paragraphText3,
+    paragraphText4,
+    footerText,
+    refreshText,
+    navigateButtonText,
+    logoutText }) => {
+
     let maxSeconds = 600;
     let refStatus = useRef();
     const [counter, setCounter] = useState(maxSeconds);
@@ -87,27 +102,27 @@ export const HomePage = ({ title, subtitle, logoImage = {}, backgroundImage = {}
                 }
             </header >
             <div className="body-container-2">
-                <img src={backgroundImage.src} alt='logo' className="background-image-2" />
+                <img src={uolBall} alt='logo' className="background-image-2" />
                 <div className="text-container">
-                    <h1 className='text-title'>Our mission is</h1>
-                    <p>Nossa missão é</p>
-                    <h1>to transform the world</h1>
-                    <p>transformar o mundo</p>
-                    <h1>building digital experiences</h1>
-                    <p>construindo experiências digitais</p>
-                    <h1>that enable our client's growth</h1>
-                    <p>que permitam o crescimento dos nossos clientes</p>
+                    <h1 className='text-title'> {titleText1}</h1>
+                    <p>{paragraphText1}</p>
+                    <h1>{titleText2}</h1>
+                    <p>{paragraphText2}</p>
+                    <h1>{titleText3}</h1>
+                    <p>{paragraphText3}</p>
+                    <h1>{titleText4}</h1>
+                    <p>{paragraphText4}</p>
                 </div>
             </div>
             <div className="footer-container">
                 <div className="footer-content">
                     <div className="footer-text">
-                        <span>Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar.</span>
+                        <span>{footerText}</span>
                         <div className="vertical-line"></div>
                     </div>
                     <div className="footer-refresh-container">
                         <span className='refresh-text'>
-                            Application refresh in
+                            {refreshText}
                         </span>
                         <div className="refresh-time">
                             <span className="seconds">{counter}</span>
@@ -118,7 +133,7 @@ export const HomePage = ({ title, subtitle, logoImage = {}, backgroundImage = {}
                         <span
                             onClick={() => setCounter(maxSeconds)}
                         >
-                            Continuar Navegando
+                            {navigateButtonText}
                         </span>
                     </div>
                     <div className="logout">
@@ -126,7 +141,7 @@ export const HomePage = ({ title, subtitle, logoImage = {}, backgroundImage = {}
                             className="logout-button"
                             onClick={LoginRedirect}
                         >
-                            Logout
+                            {logoutText}
                         </span>
                     </div>
                 </div>

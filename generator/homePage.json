@@ -1,60 +1,122 @@
 {
-    "project-settings": {
-      "code-owner": "Reactapp",
-      "bundle-path": "../core/src/main/java",
-      "test-path": "../core/src/test/java",
-      "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
-      "component-path": "reactapp",
-      "model-interface-pkg": "com.reactapp.core.models",
-      "model-impl-pkg": "com.reactapp.core.models.impl"
-    },
-    "name": "home-page",
-    "title": "Home Page",
-    "group": "React App - Content",
-    "type": "components",
-    "options": {
-      "js": false,
-      "jstxt": false,
-      "css": false,
-      "csstxt": false,
-      "html": false,
-      "html-content": false,
-      "slingmodel": true,
-      "testclass": false,
-      "junit-major-version": 5,
-      "content-exporter": true,
-      "model-adaptables": ["request"],
-      "generic-javadoc": false,
-      "properties": [
-        {
-          "field": "logoImage",
-          "type": "image",
-          "label": "logoImage",
-          "json-expose": true,
-          "json-property": "logoImage"
-        },
-        {
-          "field": "backgroundImage",
-          "type": "image",
-          "label": "backgroundImage",
-          "json-expose": true,
-          "json-property": "backgroundImage"
-        },
-        {
-          "field": "title",
-          "type": "textfield",
-          "label": "title",
-          "json-expose": true,
-          "json-property": "title"
-        },
-        {
-          "field": "subtitle",
-          "type": "textfield",
-          "label": "subtitle",
-          "json-expose": true,
-          "json-property": "subtitle"
-        }
-      ]
-    }
+  "project-settings": {
+    "code-owner": "Reactapp",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "reactapp",
+    "model-interface-pkg": "com.reactapp.core.models",
+    "model-impl-pkg": "com.reactapp.core.models.impl"
+  },
+  "name": "home-page",
+  "title": "Home Page",
+  "group": "React App - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": ["request"],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "logoImage",
+        "type": "image",
+        "label": "logoImage",
+        "json-expose": true,
+        "json-property": "logoImage"
+      },
+      {
+        "field": "titleText1",
+        "type": "textfield",
+        "label": "titleText1",
+        "json-expose": true,
+        "json-property": "titleText1"
+      },
+      {
+        "field": "titleText2",
+        "type": "textfield",
+        "label": "titleText2",
+        "json-expose": true,
+        "json-property": "titleText2"
+      },
+      {
+        "field": "titleText3",
+        "type": "textfield",
+        "label": "titleText3",
+        "json-expose": true,
+        "json-property": "titleText3"
+      },
+      {
+        "field": "titleText4",
+        "type": "textfield",
+        "label": "titleText4",
+        "json-expose": true,
+        "json-property": "titleText4"
+      },
+      {
+        "field": "paragraphText1",
+        "type": "textfield",
+        "label": "paragraphText1",
+        "json-expose": true,
+        "json-property": "paragraphText1"
+      },
+      {
+        "field": "paragraphText2",
+        "type": "textfield",
+        "label": "paragraphText2",
+        "json-expose": true,
+        "json-property": "paragraphText2"
+      },
+      {
+        "field": "paragraphText3",
+        "type": "textfield",
+        "label": "paragraphText3",
+        "json-expose": true,
+        "json-property": "paragraphText3"
+      },
+      {
+        "field": "paragraphText4",
+        "type": "textfield",
+        "label": "paragraphText4",
+        "json-expose": true,
+        "json-property": "paragraphText4"
+      },
+      {
+        "field": "footerText",
+        "type": "textfield",
+        "label": "footerText",
+        "json-expose": true,
+        "json-property": "footerText"
+      },
+      {
+        "field": "refreshText",
+        "type": "textfield",
+        "label": "refreshText",
+        "json-expose": true,
+        "json-property": "refreshText"
+      },
+      {
+        "field": "navigateButtonText",
+        "type": "textfield",
+        "label": "navigateButtonText",
+        "json-expose": true,
+        "json-property": "navigateButtonText"
+      },
+      {
+        "field": "logoutText",
+        "type": "textfield",
+        "label": "logoutText",
+        "json-expose": true,
+        "json-property": "logoutText"
+      }
+    ]
   }
-  
+}

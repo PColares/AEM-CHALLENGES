@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/css/main.4b54f9d4.chunk.css",
-    "main.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/main.1607b977.chunk.js",
-    "main.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/main.1607b977.chunk.js.map",
+    "main.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/main.969607ad.chunk.js",
+    "main.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/main.969607ad.chunk.js.map",
     "runtime-main.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/runtime-main.03810f5a.js",
     "runtime-main.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/runtime-main.03810f5a.js.map",
     "static/js/2.a4dfb450.chunk.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/2.a4dfb450.chunk.js",
@@ -20,12 +20,14 @@
     "static/css/4.269a8ef5.chunk.css.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/css/4.269a8ef5.chunk.css.map",
     "static/css/main.4b54f9d4.chunk.css.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/css/main.4b54f9d4.chunk.css.map",
     "static/js/2.a4dfb450.chunk.js.LICENSE.txt": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/2.a4dfb450.chunk.js.LICENSE.txt",
-    "static/js/3.83b71e99.chunk.js.LICENSE.txt": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/3.83b71e99.chunk.js.LICENSE.txt"
+    "static/js/3.83b71e99.chunk.js.LICENSE.txt": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/3.83b71e99.chunk.js.LICENSE.txt",
+    "static/media/notebook-background.660e50f1.png": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/media/notebook-background.660e50f1.png",
+    "static/media/uol-ball.e4ec4772.png": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/media/uol-ball.e4ec4772.png"
   },
   "entrypoints": [
     "static/js/runtime-main.03810f5a.js",
     "static/js/2.a4dfb450.chunk.js",
     "static/css/main.4b54f9d4.chunk.css",
-    "static/js/main.1607b977.chunk.js"
+    "static/js/main.969607ad.chunk.js"
   ]
 }

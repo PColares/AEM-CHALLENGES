@@ -19,6 +19,7 @@
 package com.reactapp.core.models;
 
 import com.adobe.cq.export.json.ComponentExporter;
+import com.adobe.cq.wcm.core.components.models.Image;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.osgi.annotation.versioning.ConsumerType;
 
@@ -34,15 +35,42 @@ public interface HomePage
 
 
     @JsonProperty("logoImage")
-    com.adobe.cq.wcm.core.components.models.Image getLogoImage();
+    Image getLogoImage();
 
-    @JsonProperty("backgroundImage")
-    com.adobe.cq.wcm.core.components.models.Image getBackgroundImage();
+    @JsonProperty("titleText1")
+    String getTitleText1();
 
-    @JsonProperty("title")
-    String getTitle();
+    @JsonProperty("titleText2")
+    String getTitleText2();
 
-    @JsonProperty("subtitle")
-    String getSubtitle();
+    @JsonProperty("titleText3")
+    String getTitleText3();
+
+    @JsonProperty("titleText4")
+    String getTitleText4();
+
+    @JsonProperty("paragraphText1")
+    String getParagraphText1();
+
+    @JsonProperty("paragraphText2")
+    String getParagraphText2();
+
+    @JsonProperty("paragraphText3")
+    String getParagraphText3();
+
+    @JsonProperty("paragraphText4")
+    String getParagraphText4();
+
+    @JsonProperty("footerText")
+    String getFooterText();
+
+    @JsonProperty("refreshText")
+    String getRefreshText();
+
+    @JsonProperty("navigateButtonText")
+    String getNavigateButtonText();
+
+    @JsonProperty("logoutText")
+    String getLogoutText();
 
 }

@@ -2,10 +2,10 @@ import React from 'react';
 import { MapTo } from '@adobe/aem-react-editable-components';
 import { TitleSection } from '../TitleSection/titleSection';
 import { LoginForm } from '../FormSection/formSection'
-
+import notebookBackground from '../../assets/notebook-background.png'
 require('./index.css')
 
-export const LoginPage = ({ title, paragraph, buttonName, logoImage = {}, backgroundImage = {} }) => {
+export const LoginPage = ({ title, paragraph, buttonName, logoImage = {} }) => {
     const loginTitle = "Login"
     return (
         <div className="container-1">
@@ -14,8 +14,8 @@ export const LoginPage = ({ title, paragraph, buttonName, logoImage = {}, backgr
                 <LoginForm title={loginTitle} buttonName={buttonName} />
             </div>
             <div className="flex-item-2">
-                <img src={logoImage.src} alt='logo' className="compasso-logo-1" />
-                <img src={backgroundImage.src} alt='background' className='background-image-1' />
+                <img src={logoImage.src} alt='compasso logo' className="compasso-logo-1" />
+                <img src={notebookBackground} alt='notebook background' className='background-image-1' />
             </div>
         </div>
     )
