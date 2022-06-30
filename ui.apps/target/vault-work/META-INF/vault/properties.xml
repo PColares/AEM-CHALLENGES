@@ -4,7 +4,7 @@
 <comment>React App - UI apps</comment>
 <entry key="cloudManagerTarget">none</entry>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2022-06-22T16:41:21.472Z</entry>
+<entry key="created">2022-06-27T20:53:42.860Z</entry>
 <entry key="groupId">com.reactapp</entry>
 <entry key="name">reactapp.ui.apps</entry>
 <entry key="description">UI apps package for React App</entry>

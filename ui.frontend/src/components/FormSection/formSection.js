@@ -16,12 +16,10 @@ function login({ user, password }) {
 }
 
 export const LoginForm = ({ title, buttonName }) => {
-
     const [values, setValues] = useState(initialState);
     const [error, setError] = useState(null);
     const { setToken } = useContext(StoreContext);
     const history = useHistory();
-
 
     function onChange(event) {
         const { value, name } = event.target;
@@ -43,7 +41,6 @@ export const LoginForm = ({ title, buttonName }) => {
         }
         setError(error);
         setValues(initialState);
-
     }
 
     return (
@@ -75,8 +72,8 @@ export const LoginForm = ({ title, buttonName }) => {
             <button className="form-button" type="submit" >
                 {buttonName}
             </button>
-
         </form>
     )
 }
+
 export default MapTo('reactapp/components/form-section')(LoginForm);

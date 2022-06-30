@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useHistory } from "react-router-dom";
 import { MapTo } from '@adobe/aem-react-editable-components';
-
 require('./index.css')
 
 export const HomePage = ({ title, subtitle, logoImage = {}, backgroundImage = {} }) => {
@@ -11,6 +10,14 @@ export const HomePage = ({ title, subtitle, logoImage = {}, backgroundImage = {}
     const [counter, setCounter] = useState(maxSeconds);
     const [location, setLocation] = useState(null);
     const [data, setData] = useState(null);
+    const date = new Date();
+    const [dateTime, setDateTime] = useState({
+        hours: date.getHours(),
+        minutes: date.getMinutes()
+    });
+    const dayName = ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"];
+    const monName = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+    const displayDate = dayName[date.getDay()] + ", " + date.getDate() + " de " + monName[date.getMonth()] + " de " + date.getFullYear();
     const history = useHistory();
 
     const LoginRedirect = () => {
@@ -25,6 +32,7 @@ export const HomePage = ({ title, subtitle, logoImage = {}, backgroundImage = {}
                 setData(data.location)
             });
     }
+
     useEffect(() => {
         fetchData();
     }, [])
@@ -42,10 +50,25 @@ export const HomePage = ({ title, subtitle, logoImage = {}, backgroundImage = {}
         }
     }, [counter])
 
+    useEffect(() => {
+        const timer = setInterval(() => {
+            const date = new Date();
+            setDateTime({
+                hours: date.getHours(),
+                minutes: date.getMinutes()
+            });
+        }, 1000);
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <div className="home-container">
             <header className="header-item-1">
                 <img src={logoImage.src} alt='logo' className="compasso-logo-2" />
+                <div className="date-container">
+                    <span className="clock">{dateTime.hours}:{dateTime.minutes}</span>
+                    <span className='date'>{displayDate}</span>
+                </div>
                 {location && data && (
                     <div className="weather-api">
                         <span>{data.name} - {data.region}</span>

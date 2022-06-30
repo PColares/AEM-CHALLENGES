@@ -1,6 +1,5 @@
 .home-container {
   width: 100vw;
-  height: 100vh;
 }
 
 .header-item-1 {
@@ -9,6 +8,31 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.clock {
+  font-family: 'Poppins' !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 124px;
+  line-height: 216px;
+  color: #222222;
+  height: 160px;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  margin: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #222222;
 }
 
 .compasso-logo-2 {
@@ -52,6 +76,7 @@
 .text-title {
   font-size: 36px;
 }
+
 .text-container p {
   font-weight: 400;
   font-size: 16px;
@@ -202,6 +227,9 @@
 }
 
 @media (max-width: 650px) {
+  .date-container {
+    display: none;
+  }
   .background-image-2 {
     position: fixed;
     width: 31.25rem;
