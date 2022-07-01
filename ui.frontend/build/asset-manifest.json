@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/css/main.4b54f9d4.chunk.css",
-    "main.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/main.969607ad.chunk.js",
-    "main.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/main.969607ad.chunk.js.map",
+    "main.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/main.6cfffb1f.chunk.js",
+    "main.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/main.6cfffb1f.chunk.js.map",
     "runtime-main.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/runtime-main.03810f5a.js",
     "runtime-main.js.map": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/runtime-main.03810f5a.js.map",
     "static/js/2.a4dfb450.chunk.js": "/etc.clientlibs/reactapp/clientlibs/clientlib-react/resources/static/js/2.a4dfb450.chunk.js",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.03810f5a.js",
     "static/js/2.a4dfb450.chunk.js",
     "static/css/main.4b54f9d4.chunk.css",
-    "static/js/main.969607ad.chunk.js"
+    "static/js/main.6cfffb1f.chunk.js"
   ]
 }
