@@ -3,8 +3,234 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useHistory } from "react-router-dom";
 import { MapTo } from '@adobe/aem-react-editable-components';
 import uolBall from '../../assets/uol-ball.png';
+import styled from 'styled-components';
 
-require('./index.css')
+const HomeContainer = styled.div`
+    width: 100vw;
+`;
+
+const HeaderItem1 = styled.header`
+  height: 163px;
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  `;
+
+const DateContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+const DisplayDate = styled.span`
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #222222;
+`;
+
+const Clock = styled.span`
+    font-family: 'Poppins' !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 124px;
+    line-height: 216px;
+    color: #222222;
+    height: 160px;
+`;
+
+const CompassoLogo2 = styled.img`
+    width: 300px;
+    height: 84px;
+    top: 19px;
+    left: 28px;
+`;
+
+const BodyContainer2 = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    min-height: 60vh;
+
+    padding-top: 60px;
+`;
+
+const BackgroundImage2 = styled.img`
+    position: absolute;
+    width: 60rem;
+    max-height: 40rem;
+    left: -160px;
+    top: 300px;
+    margin-top: 90px;
+    z-index: -1;
+    object-fit: scale-down;
+`;
+
+const TextContainer = styled.div`
+    margin-right: 5%;
+    text-align: right;
+
+    .text-title {
+        font-size: 36px;
+    }
+
+    h1{
+        font-weight: 700;
+        font-size: 48px;
+        color: #c12d18;
+        line-height: 0.8;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #222222;
+    }
+
+`;
+
+const FooterContainer = styled.div`
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    z-index: 4;
+`;
+
+const FooterContent = styled.div`
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+`;
+
+const FooterText = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-right: 1%;
+
+    span {
+        font-family: 'Poppins' !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: right;
+    }
+`;
+
+const VerticalLine = styled.div`
+    border-left: 2px solid white;
+    height: 50px;
+    margin-left: 25px;
+`;
+
+const RefreshContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100px;
+`;
+
+const RefreshText = styled.span`
+    width: 50%;
+    text-align: center;
+    color: white;
+`;
+
+const RefreshTime = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    color: white;
+`;
+
+const Seconds = styled.span`
+    font-family: 'Poppins' !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+`;
+
+const Navigate = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #c13216;
+    background-color: white;
+`;
+
+const Logout = styled.div`
+    width: 100px;
+    height: 100px;
+    color: #ffffff;
+`;
+
+const LogoutButton = styled.span`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+`;
+
+const WeatherApi = styled.div`
+    width: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    font-family: 'Poppins' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #222222;
+    margin-top: 20px;
+`;
+const Temperature = styled.span`
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #222222;
+    gap: 5px;
+`;
 
 export const HomePage = ({
     logoImage = {},
@@ -78,17 +304,17 @@ export const HomePage = ({
     }, []);
 
     return (
-        <div className="home-container">
-            <header className="header-item-1">
-                <img src={logoImage.src} alt='logo' className="compasso-logo-2" />
-                <div className="date-container">
-                    <span className="clock">{dateTime.hours}:{dateTime.minutes}</span>
-                    <span className='date'>{displayDate}</span>
-                </div>
+        <HomeContainer>
+            <HeaderItem1>
+                <CompassoLogo2 src={logoImage.src} alt='logo' className="compasso-logo-2" />
+                <DateContainer>
+                    <Clock>{dateTime.hours}:{dateTime.minutes}</Clock>
+                    <DisplayDate>{displayDate}</DisplayDate>
+                </DateContainer>
                 {location && data && (
-                    <div className="weather-api">
+                    <WeatherApi>
                         <span>{data.name} - {data.region}</span>
-                        <span className='temperature'>
+                        <Temperature>
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.3438 0.851685C21.8762 0.851685 21.4755 1.25247 21.4755 1.72005V4.09137C21.4755 4.55895 21.8762 4.95974 22.3438 4.95974C22.8114 4.95974 23.2122 4.55895 23.2122 4.09137V1.72005C23.2122 1.25247 22.8114 0.851685 22.3438 0.851685Z" fill="#454545" />
                                 <path d="M30.5599 4.2583C30.2259 3.92432 29.6916 3.92432 29.3576 4.2583L27.6876 5.92824C27.3536 6.26223 27.3536 6.79661 27.6876 7.1306C28.0216 7.46459 28.556 7.46459 28.89 7.1306L30.5599 5.46066C30.8939 5.12667 30.8939 4.59229 30.5599 4.2583Z" fill="#454545" />
@@ -98,13 +324,13 @@ export const HomePage = ({
                                 <path d="M33.1317 11.6395H30.7603C30.2928 11.6395 29.892 12.0403 29.892 12.5079C29.892 12.9755 30.2928 13.3763 30.7603 13.3763H33.1317C33.5992 13.3763 34 12.9755 34 12.5079C33.9666 12.0403 33.5992 11.6395 33.1317 11.6395Z" fill="#454545" />
                             </svg>
                             {location.current.temp_c}º
-                        </span>
-                    </div>
+                        </Temperature>
+                    </WeatherApi>
                 )}
-            </header >
-            <div className="body-container-2">
-                <img src={uolBall} alt='logo' className="background-image-2" />
-                <div className="text-container">
+            </HeaderItem1 >
+            <BodyContainer2>
+                <BackgroundImage2 src={uolBall} alt='logo' className="background-image-2" />
+                <TextContainer>
                     <h1 className='text-title'> {titleText1}</h1>
                     <p>{paragraphText1}</p>
                     <h1>{titleText2}</h1>
@@ -113,34 +339,34 @@ export const HomePage = ({
                     <p>{paragraphText3}</p>
                     <h1>{titleText4}</h1>
                     <p>{paragraphText4}</p>
-                </div>
-            </div>
-            <div className="footer-container">
-                <div className="footer-content">
-                    <div className="footer-text">
+                </TextContainer>
+            </BodyContainer2>
+            <FooterContainer>
+                <FooterContent>
+                    <FooterText>
                         <span>{footerText}</span>
-                        <div className="vertical-line"></div>
-                    </div>
-                    <div className="footer-refresh-container">
-                        <span className='refresh-text'>{refreshText}</span>
-                        <div className="refresh-time">
-                            <span className="seconds">{counter}</span>
+                        <VerticalLine></VerticalLine>
+                    </FooterText>
+                    <RefreshContainer>
+                        <RefreshText>{refreshText}</RefreshText>
+                        <RefreshTime>
+                            <Seconds>{counter}</Seconds>
                             <span>seconds</span>
-                        </div>
-                    </div>
-                    <div className="navigate">
+                        </RefreshTime>
+                    </RefreshContainer>
+                    <Navigate>
                         <span onClick={() => setCounter(maxSeconds)}>
                             {navigateButtonText}
                         </span>
-                    </div>
-                    <div className="logout">
-                        <span className="logout-button" onClick={LoginRedirect}>
+                    </Navigate>
+                    <Logout>
+                        <LogoutButton onClick={LoginRedirect}>
                             {logoutText}
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div >
+                        </LogoutButton>
+                    </Logout>
+                </FooterContent>
+            </FooterContainer>
+        </HomeContainer>
     )
 }
 
